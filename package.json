@@ -9,9 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "axios": "^0.27.2",
+    "bourbon": "^7.2.0",
     "next": "12.3.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-loading": "^2.0.3",
+    "react-scripts": "^5.0.1",
+    "sass": "^1.54.9",
+    "web-vitals": "^3.0.2"
   },
   "devDependencies": {
     "eslint": "8.23.1",

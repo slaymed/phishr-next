@@ -1,34 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PHISHr
 
-## Getting Started
+### A Cybersecurity utility for detecting malicious phishing URLs using Machine Learning
 
-First, run the development server:
+**🔥 Official React Website :** http://pphishr.herokuapp.com/
 
-```bash
-npm run dev
-# or
-yarn dev
+<div align="center">
+<Img src="/src/assets/Phishing-Attacks.gif" width="60%"/>
+</div>
+
+## How does it work ?
+
+The API takes a string URL as input and returns a probability value (0-100) of URL being malicious. We declare a URL malicious if it crosses a probability value of 70%. To determine if a URL is malicious or legitimate we use a Neural Network trained on 600,000 URLs. To see how exactly the model works,checkout the model training repository [here](https://github.com/deepeshdm/Phishing-Attack-Domain-Detection).
+
+<div align="center">
+<img src="/public/phishr-demo.gif" width="80%"/>
+</div>
+
+## To Run (Locally)
+
+1. Git clone the project repository on your local system
+
+```javascipt
+git clone https://github.com/deepeshdm/phishr.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies in package.json
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```javascipt
+npm install
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+3. Deploy project on local server
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```javascipt
+npm start
+```
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+-   Checkout the REST API - [here](https://github.com/deepeshdm/Phishr-API)
+-   Model Training repository - [here](https://github.com/deepeshdm/Phishing-Attack-Domain-Detection)
