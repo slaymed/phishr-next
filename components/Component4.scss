@@ -3,17 +3,16 @@ $text-color: white;
 $text-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
 .component4 {
-  background: $bgcolor2;
+    background: $bgcolor2;
 }
 
 .developerInfo {
-  color: $text-color;
-  font-family: $text-font;
-  font-size: 18px;
-  padding-top: 20px;
-  margin-top: 20px;
-
-  font-weight: 600;
+    color: $text-color;
+    font-family: $text-font;
+    font-size: 18px;
+    padding: 20px;
+    margin: 0px;
+    font-weight: 600;
 }
 
 // ------------------------------------------------------------
@@ -23,16 +22,16 @@ $text-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
 // css for viewport width 412 and below
 @media (max-width: 412px) {
-  .component4 {
-    background: $bgcolor2;
-    min-width: 200vw;
-  }
+    .component4 {
+        background: $bgcolor2;
+        min-width: 200vw;
+    }
 }
 
 // css for viewport width 412px-720px
 @media (min-width: 412px) and (max-width: 721px) {
-  .component4 {
-    background: $bgcolor2;
-    min-width: 200vw;
-  }
+    .component4 {
+        background: $bgcolor2;
+        min-width: 200vw;
+    }
 }
