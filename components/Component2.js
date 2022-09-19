@@ -3,7 +3,6 @@ import React from "react";
 const Component2 = () => {
     return (
         <div className="component2">
-            <img className="phishing-img" src="Phishing-Attacks.gif" alt="Phishing Gif" />
             <p className="phishing-description">
                 "Phishing is a type of online scam where criminals impersonate legitimate organizations via email, text
                 message, advertisement or other means in order to steal sensitive information. This is usually done by

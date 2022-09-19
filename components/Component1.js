@@ -1,9 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 
 import Loading from "./Loader";
-import { useState } from "react";
-import Image from "next/image";
-const axios = require("axios");
 
 const Component1 = () => {
     const [input_Url, setUrl] = useState("");
@@ -75,7 +73,7 @@ const Component1 = () => {
 
     return (
         <div className="component1" align="center">
-            <img className="phishrImg" src="/Phishr.png" alt="Phishing Logo" />
+            <h1 style={{ color: "#121212", paddingTop: "50px" }}>Detection of phishing websites using deep learning</h1>
             <ConditionalRender />
             <div>
                 <input

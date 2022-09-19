@@ -9,7 +9,7 @@ export default function Home() {
     return (
         <div>
             <Component1 />
-            <Component2 />
+            {/* <Component2 /> */}
             <Component3 />
             <Component4 />
         </div>
